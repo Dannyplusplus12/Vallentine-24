@@ -1,0 +1,281 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: PR;
+    src: url(../asset/font/PR.ttf);
+}
+
+@font-face {
+    font-family: SF;
+    src: url(../asset/font/SF.ttf);
+}
+
+@font-face {
+    font-family: PS;
+    src: url(../asset/font/PS.ttf);
+}
+
+@font-face {
+    font-family: GH;
+    src: url(../asset/font/GH.ttf);
+}
+
+#bg-particle {
+    width: 100%;
+    height: 100%;
+    min-height: 100vh;
+    background: linear-gradient(#36e8ff, #00578a);
+
+    position: absolute;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    z-index: -1000;
+}
+
+#app {
+    width: 100%;
+    height: 100%;
+    min-height: 100vh;
+    position: relative;
+
+    overflow-x: hidden;
+    overflow-y: hidden;
+
+    color: #2c2c2c;
+}
+
+h4 {
+    font-family: GH;
+    font-size: 52px;
+}
+
+h6 {
+    font-family: GH;
+    font-size: 24px;
+    font-weight: 900;
+    letter-spacing: 1px;
+}
+
+.center {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+}
+
+.invisible {
+    opacity: 0 !important;
+    cursor: default !important;
+}
+
+.none {
+    display: none !important;
+}
+
+.click_continue {
+    font-family: PS;
+    font-size: 16px;
+    letter-spacing: 6px;
+    color: #dcdcdc;
+
+    margin-top: 100px;
+    cursor: pointer;
+}
+
+
+.cloud {
+    width: 450px;
+    height: auto;
+    background-image: url(../asset/1.png);
+    position: absolute;
+    cursor: pointer;
+
+    left: 50%;
+    top: 50%;
+    margin-left: -225px;
+    margin-top: -175px;
+
+    font-family: GH;
+    font-size: 32px;
+    font-weight: 700;
+}
+
+.cloud img {
+    width: 100%;
+}
+
+.text-wrapper {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+
+
+.long-cloud {
+    position: absolute;
+    height: 100%;
+    width: 200vw;
+    background-position: top;
+    background-size: contain;
+}
+
+.long-cloud#c-1 {
+    background-image: url(../asset/l1.png);
+}
+
+.long-cloud#c-2 {
+    background-image: url(../asset/l2.png);
+}
+
+.long-cloud#c-3 {
+    background-image: url(../asset/l3.png);
+}
+
+#start_btn-wrapper {
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    flex-direction: column;
+
+
+    font-family: PS;
+    font-size: 48px;
+}
+
+#start_btn {
+    background-color: #4ad6bf;
+    padding: 0px 24px;
+    margin-top: 16px;
+    font-size: 32px;
+    border-radius: 12px;
+    
+    cursor: pointer;
+}
+
+
+#choose {
+    width: 100%;
+    height: 100vh;
+    
+    position: relative;
+    flex-direction: column;
+
+    font-family: GH;
+    font-size: 42px;
+}
+
+#choose .btn-wrapper {
+    width: 100%;
+    margin-top: 32px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+
+    font-family: PS;
+    font-size: 32px;
+}
+
+#choose .btn-wrapper div {
+    padding: 4px 12px;
+    border-radius: 12px;
+    cursor: pointer;
+}
+
+#yes-btn {
+    background-color: #00ffaa;
+}
+
+#no-btn {
+    background-color: #d61111;
+}
+
+#fake_no-btn {
+    padding: 4px 12px;
+    border-radius: 12px;
+    cursor: pointer;
+    background-color: #d61111;
+
+    font-family: PS;
+    font-size: 32px;
+
+    position: absolute;
+}
+
+#good-girl {
+    width: 100%;
+    height: 100vh;
+
+    flex-direction: column;
+}
+
+#answer {
+    width: 100%;
+    height: 100vh;
+    
+    flex-direction: column;
+}
+
+#answer .answer-box {
+    width: 40%;
+    margin-top: 24px;
+    font-size: 20px;
+    font-weight: 600;
+	appearance: none;
+	border: none;
+	outline: none;
+	border-bottom: .2em solid rgb(0, 50, 90);
+	background: rgba(0, 50, 90, 0.2);
+	border-radius: .2em .2em 0 0;
+	padding: .4em;
+	color: rgb(0, 50, 90);
+}
+
+#after-answer {
+    width: 100%;
+    height: 100vh;
+
+    flex-direction: column;
+}
+
+#letter {
+    width: 100%;
+    height: fit-content;
+    padding: 120px 120px 120px 120px;
+}
+
+#letter .wrapper {
+    background-color: rgb(255 255 255 / 30%);
+    backdrop-filter: blur(4px);
+
+    width: 80%;
+    padding: 64px 120px 64px 120px;
+    border-radius: 32px;
+
+    font-family: GH;
+    font-size: 18px;
+}
+
+#letter .wrapper .title {
+    display: flex;
+    justify-content: right;
+    font-size: 24px;
+    margin-bottom: 24px;
+}
+
+
+#before_letter {
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+}
+
+#letter-img {
+    cursor: pointer;
+}
